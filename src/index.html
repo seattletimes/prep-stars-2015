@@ -22,12 +22,25 @@
       <section class="slider">
         <a class="pan left" href="javascript:;">&laquo;</a>
         <div class="slide-container">
-          
+          <% json.PrepStars_stars.forEach(function(student, i) { %>
+          <div class="student">
+            <div class="image-frame">
+              <img src="http://placekitten.com/200/286" data-student="<%= student.name %>">
+            </div>
+          </div>
+          <% }) %>
         </div>
         <a class="pan right" href="javascript:;">&raquo;</a>  
       </section>
+      <section class="details">
+        Click or tap on an athlete to see details.
+      </section>
       
     </main>
+
+    <script>
+studentData = <%= JSON.stringify(json.PrepStars_stars) %>;
+    </script>
 
     <script src="app.js" async></script>
     <% if (json.project.production) { %>

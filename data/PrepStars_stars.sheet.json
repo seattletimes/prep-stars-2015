@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Thomas",
+    "school": "Strasburg High",
+    "sport": "football",
+    "position": "Co-captain",
+    "blurb": "This space intentionally left blank.",
+    "image": "thomas.jpg"
+  },
+  {
+    "name": "Audrey",
+    "school": "Rutherford B. Jenkins",
+    "sport": "football",
+    "position": "Defensive end",
+    "height": "6'2",
+    "weight": 220,
+    "blurb": "Wait, what?",
+    "image": "audrey.jpg"
+  },
+  {
+    "name": "Alice"
+  },
+  {
+    "name": "Bob"
+  },
+  {
+    "name": "Eve"
+  },
+  {
+    "name": "Jennifer"
+  },
+  {
+    "name": "Mark"
+  },
+  {
+    "name": "Pat"
+  },
+  {
+    "name": "Slim"
+  },
+  {
+    "name": "Sparky"
+  }
+]

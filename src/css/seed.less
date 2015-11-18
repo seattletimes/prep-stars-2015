@@ -11,7 +11,6 @@
   max-width: 800px;
   height: 200px;
   margin: 20px auto;
-  outline: 1px solid @df-light-gray;
 
   a.pan {
     background: white;
@@ -21,9 +20,14 @@
     text-align: center;
     padding: 0 8px;
     color: @df-dark-gray;
+    border: 1px solid @df-light-gray;
 
     &:hover {
       background: @df-light-gray;
+    }
+
+    .touch-enabled & {
+      display: none;
     }
   }
   
@@ -32,12 +36,50 @@
     .flex(1 1 90%);
     .display-flex;
     overflow: hidden;
+    .justify-content(flex-start);
+
+    .touch-enabled & {
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
   }
 }
 
-.touch-enabled {
-  .slide-container {
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+.student {
+  .flex(1 0 140px);
+  width: 160px;
+  overflow: hidden;
+  position: relative;
+
+  .image-frame {
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
   }
+
+  img {
+    max-height: 100%;
+    height: 200px;
+  }
+
+  &.activated {
+    &::after {
+      content: "";
+      position: absolute;
+      height: 0px;
+      width: 0px;
+      border-color: transparent transparent white transparent;
+      border-style: solid;
+      border-width: 0 20px 40px;
+      // border: 20px solid white;
+      transform: translateX(-50%);
+      bottom: 0px;
+      left: 50%;
+      z-index: 999;
+    }
+  }
+}
+
+.details {
+
 }
