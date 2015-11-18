@@ -1,0 +1,43 @@
+@import "seattletimes";
+@import "flexbox";
+
+.interactive {
+  max-width: 960px;
+  margin: auto;
+}
+
+.slider {
+	.display-flex;
+  max-width: 800px;
+  height: 200px;
+  margin: 20px auto;
+  outline: 1px solid @df-light-gray;
+
+  a.pan {
+    background: white;
+    .display-flex;
+    .align-items(center);
+    font-size: 48px;
+    text-align: center;
+    padding: 0 8px;
+    color: @df-dark-gray;
+
+    &:hover {
+      background: @df-light-gray;
+    }
+  }
+  
+  .slide-container {
+    box-shadow: inset 4px 4px 12px rgba(0, 0, 0, .5);
+    .flex(1 1 90%);
+    .display-flex;
+    overflow: hidden;
+  }
+}
+
+.touch-enabled {
+  .slide-container {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}

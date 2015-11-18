@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= json.project.title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <%= t.include("partials/_head.html") %>
+  </head>
+  <body>
+    
+    <%= t.include("partials/_nav.html") %>
+    
+    <main class="interactive">
+
+      <h1>Prep Stars 2015</h1>
+
+      <p>
+        This space intentionally left blank.
+      </p>
+
+      <section class="slider">
+        <a class="pan left" href="javascript:;">&laquo;</a>
+        <div class="slide-container">
+          
+        </div>
+        <a class="pan right" href="javascript:;">&raquo;</a>  
+      </section>
+      
+    </main>
+
+    <script src="app.js" async></script>
+    <% if (json.project.production) { %>
+    <%= !json.project.embedded ? t.include("partials/_foot.html") : "" %>
+    <%= t.include("partials/_workHere.html") %>
+    <% } %>
+  </body>
+</html>
