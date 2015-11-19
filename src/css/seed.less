@@ -10,7 +10,7 @@
 	.display-flex;
   max-width: 800px;
   height: 200px;
-  margin: 20px auto;
+  margin: 20px auto 0;
 
   a.pan {
     background: white;
@@ -86,5 +86,19 @@
 }
 
 .details {
+  max-width: 800px;
+  margin: auto;
+  border-style: solid;
+  border-color: @df-light-gray;
+  border-width: 0 1px 1px;
+  padding: 40px;
+  font-family: @df-sans;
+  color: @df-dark-gray;
+  text-align: center;
+  font-size: 13px;
 
+  &.has-content {
+    text-align: left;
+    font-size: 15px;
+  }
 }
