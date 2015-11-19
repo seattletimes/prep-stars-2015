@@ -22,13 +22,15 @@
       <section class="slider">
         <a class="pan left" href="javascript:;">&laquo;</a>
         <div class="slide-container">
-          <% json.PrepStars_stars.forEach(function(student, i) { %>
-          <div class="student">
-            <div class="image-frame">
-              <img src="http://placekitten.com/200/286" data-student="<%= student.name %>">
+          <div class="row">
+            <% json.PrepStars_stars.forEach(function(student, i) { %>
+            <div class="student">
+              <div class="image-frame">
+                <img src="http://placekitten.com/200/286" data-student="<%= student.name %>">
+              </div>
             </div>
+            <% }) %>
           </div>
-          <% }) %>
         </div>
         <a class="pan right" href="javascript:;">&raquo;</a>  
       </section>

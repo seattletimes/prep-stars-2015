@@ -33,15 +33,20 @@
   
   .slide-container {
     box-shadow: inset 4px 4px 12px rgba(0, 0, 0, .5);
-    .flex(1 1 90%);
-    .display-flex;
     overflow: hidden;
-    .justify-content(flex-start);
 
     .touch-enabled & {
       overflow-y: scroll;
       -webkit-overflow-scrolling: touch;
     }
+  }
+
+  .row {
+    .flex(1 1 90%);
+    .display-flex;
+    .justify-content(flex-start);
+    position: relative;
+    transition: .2s ease-in-out;
   }
 }
 

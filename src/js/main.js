@@ -27,3 +27,14 @@ $slider.on("click", ".student img", function() {
   $details.html(detailTemplate(student));
   $details.addClass("has-content");
 });
+
+var blocks = Array.prototype.slice.call(document.querySelectorAll(".student"));
+var viewport = document.querySelector(".slide-container");
+
+$slider.on("click", ".pan", function() {
+  var goRight = this.classList.contains("right");
+  var { width } = viewport.getBoundingClientRect();
+  var scroll = viewport.scrollLeft;
+  var distance = goRight ? width * .8 : width * -.8;
+  $(viewport).animate({ scrollLeft: viewport.scrollLeft + distance });
+});
