@@ -11,9 +11,17 @@
 
     <%= t.include("partials/_nav.html") %>
 
+    <%= t.include("partials/_ad.html", { type: "banner" }) %>
+
     <main class="interactive">
 
       <h1>Prep Stars 2015</h1>
+
+      <div class="video-container">
+        <div class="aspect-inner">
+          <iframe src="https://www.youtube.com/embed/a1Y73sPHKxw" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
 
       <p>The Seattle Times honors the best athletes and coaches in high-school sports with the 2015 Star Times all-area teams. Fall selections are for football, volleyball and girls soccer.</p>
       <p>Seattle Times staffers and freelancers select Star Times all-area honorees twice a year from athletes in King and Snohomish counties, plus schools in the Metro and WesCo conferences. Meet this season's selections below.</p>
@@ -38,6 +46,8 @@
       </section>
 
     </main>
+
+    <%= t.include("partials/_navBottom.html") %>
 
     <script>
 studentData = <%= JSON.stringify(json.PrepStars_stars) %>;

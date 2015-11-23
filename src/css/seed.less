@@ -1,16 +1,55 @@
 @import "seattletimes";
 @import "flexbox";
 
+@image-height: 200px;
+@image-width: 140px;
+
+.ad {
+  margin: auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
 .interactive {
   max-width: 960px;
+  padding: 0 20px 40px;
   margin: auto;
+}
+
+.video-container {
+  float: right;
+  width: 480px;
+  max-width: 50%;
+  margin-left: 40px;
+  margin-bottom: 20px;
+
+  @media @tablet {
+    float: none;
+    max-width: 100%;
+    margin: 0 auto 20px;
+  }
+
+  .aspect-inner {
+    padding-bottom: percentage(9 / 16);
+    position: relative;
+  }
+
+  iframe, video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .slider {
 	.display-flex;
   max-width: 800px;
-  height: 200px;
+  // height is set manually - update when we have real images
+  height: @image-height;
   margin: 20px auto 0;
+  clear: both;
 
   a.pan {
     background: white;
@@ -35,6 +74,7 @@
     box-shadow: inset 4px 4px 12px rgba(0, 0, 0, .5);
     overflow: hidden;
 
+    //on mobile, the buttons go away and we use touch scrolling
     .touch-enabled & {
       overflow-x: scroll;
       -webkit-overflow-scrolling: touch;
@@ -51,8 +91,8 @@
 }
 
 .student {
-  .flex(1 0 140px);
-  width: 160px;
+  .flex(1 0 @image-width);
+  width: @image-width;
   overflow: hidden;
   position: relative;
 
@@ -64,7 +104,7 @@
 
   img {
     max-height: 100%;
-    height: 200px;
+    height: @image-height;
   }
 
   &.activated {
@@ -100,5 +140,36 @@
   &.has-content {
     text-align: left;
     font-size: 15px;
+    padding: 10px 40px;
+
+    @media @mobile {
+      padding: 10px 20px;
+    }
+  }
+
+  h2 {
+    margin: 0px;
+  }
+
+  .columns {
+    .display-flex();
+
+    @media @mobile {
+      display: block;
+    }
+
+    .stats {
+      .flex(1);
+    }
+
+    .blurb {
+      .flex(1);
+    }
+  }
+
+  .stats {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
   }
 }

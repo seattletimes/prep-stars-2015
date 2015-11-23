@@ -4,6 +4,7 @@ require("./lib/ads");
 
 require("component-responsive-frame/child");
 
+//reasonably simple touch detection
 if ("ontouchstart" in window) {
   document.body.classList.add("touch-enabled");
 }
@@ -27,6 +28,8 @@ $slider.on("click", ".student img", function() {
   $details.html(detailTemplate(student));
   $details.addClass("has-content");
 });
+
+// $slider.find(".student:first img").click();
 
 var blocks = Array.prototype.slice.call(document.querySelectorAll(".student"));
 var viewport = document.querySelector(".slide-container");
