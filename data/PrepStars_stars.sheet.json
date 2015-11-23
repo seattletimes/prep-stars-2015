@@ -1,44 +1,101 @@
 [
   {
-    "name": "Thomas",
-    "school": "Strasburg High",
-    "sport": "mathletes",
-    "position": "Co-captain",
-    "blurb": "This space intentionally left blank.",
-    "image": "thomas.jpg"
+    "name": "Asia Brisco",
+    "school": "Renton",
+    "sport": "Soccer",
+    "position": "Forward",
+    "year": "Senior",
+    "blurb": "Blurb.",
+    "image": "brisco_asia_startimes.jpg"
   },
   {
-    "name": "Audrey",
-    "school": "Rutherford B. Jenkins",
-    "sport": "football",
-    "position": "Defensive end",
-    "height": "6'2",
-    "weight": 220,
-    "blurb": "Wait, what?",
-    "image": "audrey.jpg"
+    "name": "Sophia Viviano",
+    "school": "Shorecrest",
+    "sport": "Soccer",
+    "position": "Forward",
+    "year": "Senior",
+    "blurb": "Blurb.",
+    "image": "viviano_sophia_startimes.jpg"
   },
   {
-    "name": "Alice"
+    "name": "Peyton Chick",
+    "school": "Kentridge",
+    "sport": "Soccer",
+    "position": "Forward",
+    "year": "Senior",
+    "blurb": "Blurb.",
+    "image": "chick_peyton_startimes.jpg"
   },
   {
-    "name": "Bob"
+    "name": "Abi Kim",
+    "school": "Seattle Christian",
+    "sport": "Soccer",
+    "position": "Forward",
+    "year": "Senior",
+    "blurb": "Blurb.",
+    "image": "kim_abi_startimes.jpg"
   },
   {
-    "name": "Eve"
+    "name": "Jalen Woodward",
+    "school": "Seattle Prep",
+    "sport": "Soccer",
+    "position": "Midfielder",
+    "year": "Senior",
+    "blurb": "Blurb.",
+    "image": "woodward_jalen_startimes.jpg"
   },
   {
-    "name": "Jennifer"
+    "name": "Olivia Van der Jagt",
+    "school": "Kentridge",
+    "sport": "Soccer",
+    "position": "Midfielder",
+    "year": "Junior",
+    "blurb": "Blurb.",
+    "image": "vanderjagt_olivia_startimes.jpg"
   },
   {
-    "name": "Mark"
+    "name": "Mia Corbin",
+    "school": "Tahoma",
+    "sport": "Soccer",
+    "position": "Midfielder",
+    "year": "Senior",
+    "blurb": "Blurb.",
+    "image": "corbin_mia_startimes.jpg"
   },
   {
-    "name": "Pat"
+    "name": "Samantha Hiatt",
+    "school": "Seattle Prep",
+    "sport": "Soccer",
+    "position": "Defender",
+    "year": "Senior",
+    "blurb": "Blurb.",
+    "image": "hiatt_samantha_startimes.jpg"
   },
   {
-    "name": "Slim"
+    "name": "Kaylene Pang",
+    "school": "Issaquah",
+    "sport": "Soccer",
+    "position": "Defender",
+    "year": "Junior",
+    "blurb": "Blurb.",
+    "image": "pang_kaylene_startimes.jpg"
   },
   {
-    "name": "Sparky"
+    "name": "Tivona Tinsley",
+    "school": "Beamer",
+    "sport": "Soccer",
+    "position": "Defender",
+    "year": "Senior",
+    "blurb": "Blurb.",
+    "image": "tinsley_tivona_startimes.jpg"
+  },
+  {
+    "name": "Anna Miller",
+    "school": "Issaquah",
+    "sport": "Soccer",
+    "position": "Goalkeeper",
+    "year": "Senior",
+    "blurb": "Blurb.",
+    "image": "miller_anna_startimes.jpg"
   }
 ]
