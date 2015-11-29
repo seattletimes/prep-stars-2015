@@ -14,6 +14,7 @@
   max-width: 960px;
   padding: 0 20px 40px;
   margin: auto;
+  color: white;
 }
 
 .video-container {
@@ -21,7 +22,7 @@
   width: 480px;
   max-width: 50%;
   margin-left: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
   @media @tablet {
     float: none;
@@ -30,7 +31,7 @@
   }
 
   .aspect-inner {
-    padding-bottom: percentage(9 / 16);
+    padding-bottom: 10px;
     position: relative;
   }
 
@@ -50,16 +51,18 @@
   height: @image-height;
   margin: 20px auto 0;
   clear: both;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
 
   a.pan {
-    background: white;
+    background: #2B1B17;
     .display-flex;
     .align-items(center);
     font-size: 32px;
     text-align: center;
     padding: 0 8px;
-    color: @df-dark-gray;
-    border: 1px solid @df-light-gray;
+    color: white;
 
     &:hover {
       background: @df-light-gray;
@@ -69,7 +72,7 @@
       display: none;
     }
   }
-  
+
   .slide-container {
     box-shadow: inset 4px 4px 12px rgba(0, 0, 0, .5);
     overflow: hidden;
@@ -128,14 +131,15 @@
 .details {
   max-width: 800px;
   margin: auto;
-  border-style: solid;
-  border-color: @df-light-gray;
-  border-width: 0 1px 1px;
+  background: #2B1B17;
   padding: 40px;
   font-family: @df-sans;
-  color: @df-dark-gray;
+  color: white;
   text-align: center;
   font-size: 13px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
 
   &.has-content {
     text-align: left;
