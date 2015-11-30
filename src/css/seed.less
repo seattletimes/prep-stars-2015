@@ -1,8 +1,8 @@
 @import "seattletimes";
 @import "flexbox";
 
-@image-height: 200px;
-@image-width: 140px;
+@image-height: 600px;
+@image-width: 338px;
 
 .ad {
   margin: auto;
@@ -51,12 +51,10 @@
   height: @image-height;
   margin: 20px auto 0;
   clear: both;
-  border-top: 1px solid @df-light-gray;
-  border-left: 1px solid @df-light-gray;
-  border-right: 1px solid @df-light-gray;
+
 
   a.pan {
-    background: #2B1B17;
+    background: black;
     .display-flex;
     .align-items(center);
     font-size: 32px;
@@ -131,15 +129,12 @@
 .details {
   max-width: 800px;
   margin: auto;
-  background: #2B1B17;
+  background: #282828;
   padding: 40px;
   font-family: @df-sans;
   color: @df-light-gray;
   text-align: center;
   font-size: 13px;
-  border-left: 1px solid @df-light-gray;
-  border-right: 1px solid @df-light-gray;
-  border-bottom: 1px solid @df-light-gray;
 
   &.has-content {
     text-align: left;
