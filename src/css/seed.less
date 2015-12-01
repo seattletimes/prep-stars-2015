@@ -143,13 +143,18 @@
   font-size: 13px;
   border-radius: 0 0 10px 10px;
 
+  // Change left-right padding on blurb for desktop, tablet, and mobile
   &.has-content {
     text-align: left;
     font-size: 15px;
-    padding: 10px 40px;
+    padding: 20px 200px;
+
+    @media @tablet {
+      padding: 20px 20px;
+    }
 
     @media @mobile {
-      padding: 10px 20px;
+      padding: 20px 20px;
     }
   }
 
@@ -170,7 +175,7 @@
     }
 
     .blurb {
-      .flex(1);
+      .flex(2);
     }
   }
 
