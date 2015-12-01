@@ -5,16 +5,16 @@
       "path": "star-times"
     },
     "live": {
-      "bucket": "",
-      "path": ""
+      "bucket": "projects.seattletimes.com",
+      "path": "star-times-fall-2015"
     }
   },
-  "title": "",
-  "description": "",
-  "url": "",
-  "slug": "",
+  "title": "Star Times high school stars: Fall 2015",
+  "description": "Meet The Seattle Times' fall 2015 selections for its Star Times all-area teams, honoring the best team-sport high-school athletes in the Seattle area.",
+  "url": "http://projects.seattletimes.com/star-times-fall-2015",
+  "slug": "Star Times Fall 2015",
   "tags": [],
-  "image": "assets/social.jpg",
+  "image": "assets/20151130startimes_tzr.JPG",
   "production": false,
   "embedded": false,
   "sheets": ["1csP-TE8WV3FdzM_fM-VTW6vJQisfh7Q1adWtKPMnTWU"]
