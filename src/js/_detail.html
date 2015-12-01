@@ -4,8 +4,8 @@
   <ul class="stats">
     <li> <b>School:</b> <%= data.school %>
     <li> <b>Position:</b> <%= data.position %>
-    <% if (data.sport == "football") { %>
-    <li> <%= data.height %>, <%= data.weight %> lbs
+    <% if (data.position !== "coach") { %>
+    <li> <b>Year:</b> <%= data.year %>
     <% } %>
   </ul>
 
